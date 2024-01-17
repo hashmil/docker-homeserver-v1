@@ -25,6 +25,7 @@ bower_components/
 *.bak
 *.cache
 *.DS_Store
+.DS_Store
 
 # IDE and editor specific files
 .vscode/
