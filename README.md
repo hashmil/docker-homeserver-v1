@@ -15,7 +15,7 @@
 - To shutdown
   `docker-compose down`
 
-# Ports Used
+## Ports Used
 
 These can be changed in the `docker-compose.yml` file.
 These should work as `http://localhost:[port number]` - or replace `localhost` with your local IP address.
