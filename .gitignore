@@ -1,0 +1,46 @@
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Compiled files and binaries
+*.o
+*.a
+*.so
+*.exe
+*.dll
+*.dylib
+
+# Package and dependency directories
+node_modules/
+vendor/
+bower_components/
+
+# Cache and temporary files
+*.swp
+*.swo
+*~
+*.tmp
+*.temp
+*.bak
+*.cache
+*.DS_Store
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.tmproj
+*.tmproject
+*.komodoproject
+
+# Build and distribution directories
+dist/
+build/
+out/
+
+# System files
+Thumbs.db
+.DS_Store
+desktop.ini
