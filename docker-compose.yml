@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   homarr:
     image: ghcr.io/ajnart/homarr:latest
@@ -12,7 +12,7 @@ services:
       - ./homarr-config/icons:/app/public/icons
       - ./homarr-config/data:/data
     ports:
-      - 7575:7575
+      - 8888:80
     restart: unless-stopped
   plex:
     image: lsioarmhf/plex
