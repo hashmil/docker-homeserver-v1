@@ -1,4 +1,4 @@
-# Docker reciepe for a media homeserver
+# Docker recipe for a media homeserver
 
 1. Clone this repo
    `git clone https://github.com/hashmil/docker-homeserver-v1.git`
