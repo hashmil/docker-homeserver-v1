@@ -1,0 +1,63 @@
+2024-01-16 22:30:11,272 (3fa56010) :  INFO (core:349) - Starting framework core - Version: 2.6.3, Build: cc260c4 (Fri Dec 14 20:14:21 UTC 2018)
+2024-01-16 22:30:11,276 (3fa56010) :  DEBUG (core:361) - Using the elevated policy
+2024-01-16 22:30:11,277 (3fa56010) :  DEBUG (core:450) - Starting runtime component.
+2024-01-16 22:30:11,302 (3fa56010) :  DEBUG (core:450) - Starting caching component.
+2024-01-16 22:30:11,303 (3fa56010) :  DEBUG (core:450) - Starting data component.
+2024-01-16 22:30:11,303 (3fa56010) :  DEBUG (core:450) - Starting networking component.
+2024-01-16 22:30:11,304 (3fa56010) :  DEBUG (networking:288) - No cookie jar found
+2024-01-16 22:30:11,308 (3fa56010) :  DEBUG (networking:452) - Setting the default network timeout to 20.0
+2024-01-16 22:30:11,311 (3fa56010) :  DEBUG (core:450) - Starting localization component.
+2024-01-16 22:30:11,311 (3fa56010) :  INFO (localization:409) - Setting the default locale to en-us
+2024-01-16 22:30:11,312 (3fa56010) :  DEBUG (core:450) - Starting messaging component.
+2024-01-16 22:30:11,316 (3fa56010) :  DEBUG (core:450) - Starting debugging component.
+2024-01-16 22:30:11,318 (3fa56010) :  DEBUG (core:450) - Starting services component.
+2024-01-16 22:30:11,319 (3fa56010) :  DEBUG (core:450) - Starting myplex component.
+2024-01-16 22:30:11,320 (392ff460) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/system/messaging/clear_events/com.plexapp.agents.thetvdb'
+2024-01-16 22:30:11,320 (3fa56010) :  DEBUG (core:450) - Starting notifications component.
+2024-01-16 22:30:11,797 (3fa56010) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.thetvdb in namespace 'metadata'
+2024-01-16 22:30:11,817 (3fa56010) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+2024-01-16 22:30:11,835 (3fa56010) :  ERROR (networking:219) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+2024-01-16 22:30:11,839 (3fa56010) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-cc260c476/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-cc260c476/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 265, in content
+    return self.__str__()
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-cc260c476/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in __str__
+    self.load()
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-cc260c476/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 181, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-cc260c476/Framework.bundle/Contents/Resources/Platforms/Shared/Libraries/urllib2_new.py", line 444, in open
+    response = meth(req, response)
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-cc260c476/Framework.bundle/Contents/Resources/Platforms/Shared/Libraries/urllib2_new.py", line 557, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-cc260c476/Framework.bundle/Contents/Resources/Platforms/Shared/Libraries/urllib2_new.py", line 482, in error
+    return self._call_chain(*args)
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-cc260c476/Framework.bundle/Contents/Resources/Platforms/Shared/Libraries/urllib2_new.py", line 416, in _call_chain
+    result = func(*args)
+  File "/usr/lib/plexmediaserver/Resources/Plug-ins-cc260c476/Framework.bundle/Contents/Resources/Platforms/Shared/Libraries/urllib2_new.py", line 565, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+
+2024-01-16 22:30:11,867 (392ff460) :  DEBUG (services:265) - Plug-in is not daemonized - loading services from system
+2024-01-16 22:30:11,867 (3fa56010) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+2024-01-16 22:30:11,873 (3fa56010) :  DEBUG (runtime:1117) - Created a thread named 'get_server_info'
+2024-01-16 22:30:11,873 (392ff460) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_'
+2024-01-16 22:30:11,875 (37dff460) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400'
+2024-01-16 22:30:11,878 (3fa56010) :  DEBUG (core:150) - Finished starting framework core
+2024-01-16 22:30:11,878 (3fa56010) :  DEBUG (core:560) - Loading plug-in code
+2024-01-16 22:30:12,536 (392ff460) :  DEBUG (services:362) - Loaded services
+2024-01-16 22:30:12,560 (37dff460) :  DEBUG (core:538) - Machine identifier is a08675478bee93f590cc67146fe0b3ee6f493f1f
+2024-01-16 22:30:12,568 (37dff460) :  DEBUG (core:539) - Server version is 1.14.1.5488-cc260c476
+2024-01-16 22:30:12,583 (387bf460) :  DEBUG (services:438) - No shared code to load
+2024-01-16 22:30:13,349 (3fa56010) :  DEBUG (core:566) - Finished loading plug-in code
+2024-01-16 22:30:13,350 (3fa56010) :  DEBUG (agentkit:1115) - Creating new agent class called TVDBAgent
+2024-01-16 22:30:13,354 (3fa56010) :  DEBUG (agentkit:933) - Updating agent information: [{'media_types': ['TV_Show'], 'accepts_from': None, 'fallback_agent': None, 'contributes_to': None, 'languages': ['en', 'fr', 'zh', 'sv', 'no', 'da', 'fi', 'nl', 'de', 'it', 'es', 'pl', 'hu', 'el', 'tr', 'ru', 'he', 'ja', 'pt', 'cs', 'ko', 'sl', 'hr'], 'persist_stored_files': True, 'version': 0, 'primary_provider': True, 'prefs': True, 'name': 'TheTVDB'}]
+2024-01-16 22:30:13,357 (3fa56010) :  DEBUG (networking:166) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo1CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdAoyCnMyNgpjb20ucGxleGFwcC5hZ2VudHMudGhldHZkYnMxMAppZGVudGlmaWVycjEKczEwCmFnZW50X2luZm8xCnIyCjEwCnIzCnMxMQptZWRpYV90eXBlc25zMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudG5zMTQKY29udHJpYnV0ZXNfdG9yNApzOQpsYW5ndWFnZXNiMXMyMApwZXJzaXN0X3N0b3JlZF9maWxlc2kwCnM3CnZlcnNpb25iMXMxNgpwcmltYXJ5X3Byb3ZpZGVyYjFzNQpwcmVmc3M3ClRoZVRWREJzNApuYW1lMQpzNwpUVl9TaG93MjMKczIKZW5zMgpmcnMyCnpoczIKc3ZzMgpub3MyCmRhczIKZmlzMgpubHMyCmRlczIKaXRzMgplc3MyCnBsczIKaHVzMgplbHMyCnRyczIKcnVzMgpoZXMyCmphczIKcHRzMgpjc3MyCmtvczIKc2xzMgpocnIwCg__'
+2024-01-16 22:30:13,380 (3fa56010) :  INFO (core:611) - Started plug-in
+2024-01-16 22:30:13,381 (3fa56010) :  DEBUG (socketinterface:160) - Starting socket server
+2024-01-16 22:30:13,388 (3fa56010) :  DEBUG (runtime:1117) - Created a thread named 'start'
+2024-01-16 22:30:13,389 (3fa56010) :  INFO (socketinterface:184) - Socket server started on port 45905
+2024-01-16 22:30:13,390 (3fa56010) :  INFO (pipeinterface:25) - Entering run loop
+2024-01-16 22:30:13,391 (3fa56010) :  DEBUG (runtime:717) - Handling request GET /:/prefixes
+2024-01-16 22:30:13,397 (3fa56010) :  DEBUG (runtime:814) - Found route matching /:/prefixes
+2024-01-16 22:30:13,402 (3fa56010) :  DEBUG (runtime:924) - Response: [200] MediaContainer, 151 bytes

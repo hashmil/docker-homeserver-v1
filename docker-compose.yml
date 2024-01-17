@@ -1,0 +1,66 @@
+version: '3'
+services:
+  homarr:
+    image: ghcr.io/ajnart/homarr:latest
+    container_name: homarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+    volumes:
+      - ./homarr-config/config:/app/data/configs
+      - ./homarr-config/icons:/app/public/icons
+      - ./homarr-config/data:/data
+    ports:
+      - 7575:7575
+    restart: unless-stopped
+  plex:
+    image: lsioarmhf/plex
+    container_name: plex
+    volumes:
+      - ./plex-config:/config
+      - ./media:/data
+    ports:
+      - 32400:32400
+    restart: unless-stopped
+
+  sonarr:
+    image: linuxserver/sonarr
+    container_name: sonarr
+    volumes:
+      - ./sonarr-config:/config
+      - ./media:/media
+    ports:
+      - 8989:8989
+    restart: unless-stopped
+
+  radarr:
+    image: linuxserver/radarr
+    container_name: radarr
+    volumes:
+      - ./radarr-config:/config
+      - ./media:/media
+    ports:
+      - 7878:7878
+    restart: unless-stopped
+
+  jackett:
+    image: linuxserver/jackett
+    container_name: jackett
+    volumes:
+      - ./jackett-config:/config
+    ports:
+      - 9117:9117
+    restart: unless-stopped
+
+  transmission:
+    image: linuxserver/transmission
+    container_name: transmission
+    volumes:
+      - ./transmission-config:/config
+      - ./downloads:/downloads
+    ports:
+      - 9091:9091
+      - 51413:51413
+      - 51413:51413/udp
+    restart: unless-stopped

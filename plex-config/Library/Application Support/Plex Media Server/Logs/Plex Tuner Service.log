@@ -1,0 +1,29 @@
+Jan 17, 2024 13:54:11.255 [0x3ef0e420] INFO - Plex Tuner Service v1.0.0.0 - unknown PC unknown - build: 
+Jan 17, 2024 13:54:11.268 [0x3ef0e420] INFO - Linux version: 6.5.11-linuxkit (#1 SMP PREEMPT Wed Dec  6 17:08:31 UTC 2023), language: en-US
+Jan 17, 2024 13:54:11.269 [0x3ef0e420] INFO - Processor Arm
+Jan 17, 2024 13:54:11.269 [0x3ef0e420] INFO - /usr/lib/plexmediaserver/Plex Tuner Service /usr/lib/plexmediaserver/Resources/Tuner/Private /usr/lib/plexmediaserver/Resources/Tuner/Shared 1.14.1.5488-cc260c476 32600 /waitmutex
+Jan 17, 2024 13:54:11.195 [0x3f0b5210] INFO - [I] broker_t::start...
+Jan 17, 2024 13:54:11.269 [0x3f0b5210] INFO - [I] device_manager_t::init.
+Jan 17, 2024 13:54:11.269 [0x3f0b5210] INFO - [I] device_manager_t::init. Initialize provider manager
+Jan 17, 2024 13:54:11.269 [0x3f0b5210] INFO - [I] device_manager_t::init. Initialize all device auxes
+Jan 17, 2024 13:54:11.271 [0x3f0b5210] INFO - [I] dvb_device_factory_t::get_aux_list
+Jan 17, 2024 13:54:11.274 [0x3f0b5210] INFO - [I] tvbutler_aux_t::init
+Jan 17, 2024 13:54:11.288 [0x3f0b5210] INFO - [I] web_server_t::start. Starting web server on port 32600
+Jan 17, 2024 13:54:14.145 [0x3c5fb420] INFO - [I] web_service_t::process_device_discovery
+Jan 17, 2024 13:54:14.146 [0x3c5fb420] INFO - [I] device_reactor_t::get_device_list ()
+Jan 17, 2024 13:54:14.146 [0x3c5fb420] INFO - [I] dvb_device_factory_t::get_device_list ()
+Jan 17, 2024 13:54:16.189 [0x3c5fb420] INFO - [I] SAT2IP - discover_satip_servers(): no servers found
+Jan 17, 2024 13:54:16.610 [0x3c5fb420] INFO - [I] v4l::DeviceGetList_impl. getting v4l device list
+Jan 17, 2024 13:54:16.617 [0x3c5fb420] INFO - [I] onetv_factory::DeviceGetListEx >>
+Jan 17, 2024 13:54:16.619 [0x3c5fb420] WARN - [W] onetv_factory::DeviceGetListEx. libusb_init returned an error -99
+Jan 17, 2024 13:54:51.323 [0x3f0b5210] INFO - [I] Received SIGTERM: Software termination signal.
+Jan 17, 2024 13:54:51.326 [0x3f0b5210] DEBUG - Unable to lock named mutex F8EEB26D-AB23-4061-8250-130AB5285A4A: Interrupted system call
+Jan 17, 2024 13:54:51.327 [0x3f0b5210] INFO - [I] device_manager_t::term
+Jan 17, 2024 13:54:51.327 [0x3f0b5210] INFO - [I] device_manager_t::term. Stop all devices
+Jan 17, 2024 13:54:51.327 [0x3f0b5210] INFO - [I] device_manager_t::term. Shut down all device auxes
+Jan 17, 2024 13:54:51.328 [0x3f0b5210] INFO - [I] tvbutler_aux_t::term
+Jan 17, 2024 13:54:51.334 [0x3f0b5210] INFO - [I] web_server_t::stop. Web server is stopped
+Jan 17, 2024 13:54:51.334 [0x3f0b5210] INFO - [I] device_manager_t::term
+Jan 17, 2024 13:54:51.334 [0x3f0b5210] INFO - [I] device_manager_t::term. Stop all devices
+Jan 17, 2024 13:54:51.335 [0x3f0b5210] INFO - [I] device_manager_t::term. Shut down all device auxes
+Jan 17, 2024 13:54:51.336 [0x3f0b5210] INFO - [I] broker_t::shutdown. Shutdown is completed.

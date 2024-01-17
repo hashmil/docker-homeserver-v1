@@ -1,0 +1,14 @@
+Jan 16, 2024 22:30:01.660 [0x3e2d5410] INFO - Plex DLNA Server v1.14.1.5488-cc260c476 - annapurnatrans PC arm7 - build: linux-annapurnatrans-arm7 - GMT 00:00
+Jan 16, 2024 22:30:01.672 [0x3e2d5410] INFO - Linux version: 6.5.11-linuxkit (#1 SMP PREEMPT Wed Dec  6 17:08:31 UTC 2023), language: en-US
+Jan 16, 2024 22:30:01.672 [0x3e2d5410] INFO - Processor Arm
+Jan 16, 2024 22:30:01.675 [0x3e479630] DEBUG - Unique device name = a0867547-8bee-93f5-90cc-67146fe0b3ee
+Jan 16, 2024 22:30:01.676 [0x3e479630] DEBUG - DLNA server port: 32469
+Jan 16, 2024 22:30:01.676 [0x3e479630] DEBUG - PMS: http://127.0.0.1:32400/
+Jan 16, 2024 22:30:01.676 [0x3e479630] DEBUG - MyPlex: https://plex.tv/
+Jan 16, 2024 22:30:01.746 [0x3e479630] DEBUG - Loading com.plexapp.dlna is complete (success=1)
+Jan 16, 2024 22:30:01.755 [0x3e479630] ERROR - Couldn't rename file "/config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.dlna-new.db-shm" to "/config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.dlna.db-shm": No such file or directory
+Jan 16, 2024 22:30:01.756 [0x3e479630] ERROR - Couldn't rename file "/config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.dlna-new.db-wal" to "/config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.dlna.db-wal": No such file or directory
+Jan 16, 2024 22:30:01.801 [0x3e479630] DEBUG - Reading system DLNA client profiles
+Jan 16, 2024 22:30:01.888 [0x3e479630] DEBUG - Read 22 DLNA client profiles
+Jan 16, 2024 22:30:02.004 [0x3e479630] DEBUG - DLNA device discovery enabled every 60 seconds
+Jan 16, 2024 22:30:02.020 [0x3e479630] DEBUG - Initialization complete
